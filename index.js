@@ -4,6 +4,7 @@
 //   { name: "iphone 13", price: 800, qty: 10 },
 // ];
 
+import Swal from 'sweetalert2'
 let phones = JSON.parse(localStorage.getItem('phones'));
 
 let obj = { name: "iphone x", price: 700, qty: 3 };
