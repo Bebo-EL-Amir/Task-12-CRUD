@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style/Bootstrap.css" />
+  <link rel="stylesheet" href="./Style/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+  <body> 
+    <div class="col-12 container mt-xxl-3 ">
+        <table class="table table-dark mt-xxl-3 ">
+      <button class="btn btn-primary" onclick="openModel() ">Add New Phone</button>
+  
+
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Item Name</th>
+          <th>Item Price</th>
+          <th>Item Qty</th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody></tbody>
+        </div>
+    </table>
+
+
+
+
+    <div class="myModal d-none d-flex align-items-center justify-content-center ">
+<form onsubmit="addNewPhone(event)" class="animate__animated animate__fadeInDown   bg-white m-3 p-3 rounded shadow border col-5 d-flex flex-column gap-3">
+<h3>Add New Phone</h3>
+
+<input id="phoneName" class="form-control" type="text" placeholder="Enter New Phone Name" required>
+<input id="phonePrice" class="form-control" type="text" placeholder="Enter New Phone Price" required>
+<input id="phoneQty" class="form-control" type="text" placeholder="Enter New Phone Qty" required>
+<button class="btn btn-success">Save Info</button>
+</form>
+</div>
+
+<button  onmouseleave="window1() " onmouseenter="window2() " class="btn btn-primary">SayHello</button>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
